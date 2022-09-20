@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>C3STA</title>
+</head>
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <div id="content">
+        <header id="titulo"><h1>C3STA</h1><p>Caixa Registradora</p></header>
+
+        
+
+            <div id="Produto">
+                 <input type="text" id="addProduto" placeholder="Digite o Valor do Produto">
+                  <button id="addProduto" onclick="addProduto()" onclick="desconto()">Adicionar Produto</button>
+            </div>
+
+            <div id="tabelaProdutos">
+            <table border="solid" id="tp">
+              <tr>
+                <td id="produto">Produto</td>
+                <td id="valor">Preço</td>
+              </tr>
+                              
+            </table>
+            </div>
+           <div id="valores">
+            <label for="Subtotal">Sub Total</label>
+            <input type="text"  id="qtdtotal" placeholder="SubTotal" disabled>
+            <label for="desconto">Desconto %</label>
+            <input type="text" name="desconto" id="desconto" placeholder="Desconto">
+            <label for="valordodesconto">Valor do Desconto</label>
+            <input type="text" name="valordesc" id="valordesc" placeholder="Valor do Desconto" disabled>
+            <label for="totalapagar">Total a Pagar</label>
+            <input type="text" name="total" id="valorfinal" placeholder="Valor Final" disabled>
+            
+          </div>
+          
+            <button onclick="LimparDados()">LIMPAR</button>
+          <script src="./script/index.js"></script>
+
+
+
+    </div>
+</body>
+</html>
